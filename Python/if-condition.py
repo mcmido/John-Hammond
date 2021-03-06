@@ -4,7 +4,7 @@
 #if conditional_statment:
 #	statment()
 
-	
+'''
 # Example
 command = "destroy datacores"
 if command == "destroy datacores":
@@ -35,4 +35,43 @@ elif command == "permabork the frambulator":
 
 # None of the otheres evaluated to True
 else:
-	print("Command not understood.")	
+	print("Command not understood.")
+
+
+# The first one to evaluate to True 'wins'
+
+if 3!= 3:
+	print('Strange...')
+elif 8 == 8:
+	print("First True elif Found....")
+elif 8 > 4:
+	print("second True elif found....")	
+
+##################################################
+# More complicated, but all the same rules apply
+
+print("This happens befor the 'if' block")
+
+'''
+
+user_is_admin = True
+
+# What conditionals allow you to do
+
+if user_is_admin:
+	print ("Access Granted.")
+	command = input("How would you like to proceed??")
+
+	command = command.lower()
+	if command == "destroy datacores":
+		print("Destroying All Datacores")
+
+	elif command == "exit":
+		print("You don't have the guts, do you?")
+	else:
+		print("Access Denied, no correct answer")
+
+else:
+	print("Access Denied.")
+
+print("This Happens after the 'if' block.")
