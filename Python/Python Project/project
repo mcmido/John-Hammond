@@ -3,13 +3,16 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = "https://tie-house.com/product-category/collection/classic-en/" 
+url = "https://tie-house.com/product-category/suit/" 
 resp = requests.get(url)
 
 #print(resp.text)
 
 soup = BeautifulSoup(resp.text,'html.parser')
-bdi = soup.find_all('.woocommerce-Price-amount')
-print (bdi)
-#print(soup.prettify())
+bdi = soup.select('span.woocommerce-Price-amount amount')
+print(bdi[1])
+print(bdi[1].text.strip())
+
+for x in bdi:
+    print(x.text.strip())
 
