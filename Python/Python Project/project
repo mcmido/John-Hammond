@@ -9,7 +9,7 @@ resp = requests.get(url)
 #print(resp.text)
 
 soup = BeautifulSoup(resp.text,'html.parser')
-bdi = soup.select('span.woocommerce-Price-amount amount')
+bdi = soup.select('span')
 print(bdi[1])
 print(bdi[1].text.strip())
 
