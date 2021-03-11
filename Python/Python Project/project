@@ -3,19 +3,59 @@
 import requests
 from bs4 import BeautifulSoup
 
+
+# THIS PROJECT IS ON HOLD FOR THE TIME BEING >>>_<<< 
+
+
+
 url = "https://www.humblebundle.com/books/unfck-your-life-microcosm-books"
+tier_dict = {}
 resp = requests.get(url)
 
 soup = BeautifulSoup(resp.text, 'html.parser')
 
 # bundle Tiers
 # .dd-header-headline
-tier_headlines = soup.select('.dd-header-headline')
+tiers = soup.select('.dd-header')
 
-stripped_tiernames = [tier.text.strip() for tier in tier_headlines]
-print(stripped_tiernames)
+for tier in tiers:
+    if tier.select(".dd-header-headline"):
+        tiername = tier.select(".dd-header-headline").text.strip()
+        tier_dict[tiername] = {products}
 
 
+
+
+
+
+
+
+
+
+
+
+#stripped_tiernames = [tier.text.strip() for tier in tier_headlines]
+
+#print(stripped_tiernames)
+
+#[name for name in stripped_tiernames if name.startswith("Pay")]
+
+
+
+# for loop for products  ***
+#products_names = soup.select('.front-page-art-image-text')
+#stripped_product_names = [prodname.text.strip() for prodname in products_names]
+
+#print(stripped_product_names)
+
+
+
+
+
+
+
+# product names
+# .dd-image-box-caption
 # this is datastructure to store budle info
 #tiers = {
 #    "tier1": {
