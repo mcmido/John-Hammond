@@ -7,10 +7,9 @@ class SNAKE:
 
     def draw_snake(self):
         for block in self.body:
-            # create rect
+            snake_rect = pygame.Rect(block.x, block.y, 20, 20)
             # draw the rect
-            snake_rect = pygame.Rect()
-
+            pygame.draw.rect(screen, (255, 0, 15,), snake_rect)
 class FRUIT:
     def __init__(self):
         self.x = random.randint(0, cell_number - 1)
@@ -44,7 +43,7 @@ FPS = 60
 
 
 fruit = FRUIT()
-
+snake = SNAKE()
 run = True
 while run:
     for event in pygame.event.get():
@@ -54,6 +53,7 @@ while run:
             sys.exit()
     screen.fill(bg)
     fruit.draw_fruit()
+    snake.draw_snake()
     pygame.display.update()
     clock.tick(FPS)
 
