@@ -5,6 +5,12 @@ class SNAKE:
     def __init__(self):
         self.body = [Vector2(5, 10), Vector2(6, 10), Vector2(7, 10)]
 
+    def draw_snake(self):
+        for block in self.body:
+            # create rect
+            # draw the rect
+            snake_rect = pygame.Rect()
+
 class FRUIT:
     def __init__(self):
         self.x = random.randint(0, cell_number - 1)
