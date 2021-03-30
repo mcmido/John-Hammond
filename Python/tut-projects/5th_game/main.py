@@ -9,7 +9,9 @@ class FRUIT:
 
     def draw_fruit(self):
         # create a rectangle
+        fruit_rect = pygame.rect(self.pos.x, self.pos.y, cell_size, cell_number)
         # draw the rectangle
+        pygame.draw.rect(screen,(126,166,114),fruit_rect)
 
 
 
@@ -19,7 +21,7 @@ cell_size = 40
 cell_number = 20
 width = 500
 height = 600
-screen = pygame.display.set_mode((cell_number * cell_size, cell_number * ce ll_size))
+screen = pygame.display.set_mode((cell_number * cell_size, cell_number * cell_size))
 pygame.display.set_caption('SNAKE')
 bg = (234, 218, 184)
 
