@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7a22ddcb-721f-4917-8a26-cf09d23846dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test-game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test-game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +29,31 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test-game/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NEAT-Flappy-Bird-master" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.flappy_bird">
+    <configuration name="flappy_bird" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="copy-5th_game" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../NEAT-Flappy-Bird-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../NEAT-Flappy-Bird-master/flappy_bird.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="copy-5th_game" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,9 +143,11 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python.snake" />
       <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.flappy_bird" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.flappy_bird" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.snake" />
         <item itemvalue="Python.main" />
