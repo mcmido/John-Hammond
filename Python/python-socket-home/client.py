@@ -1,4 +1,5 @@
 import pygame
+from network import Network
 import sys
 
 width = 500
@@ -15,7 +16,7 @@ class BOX:
         self.r_height = 60
         self.x = width/2 - self.r_width/2
         self.y = height/2 - self.r_height/2
-        self.vel = 1
+        self.vel = 2
 
     def move_rect(self):
         keys = pygame.key.get_pressed()
@@ -39,6 +40,8 @@ class BOX:
 
 main = BOX()
 run = True
+n = Network()
+startPos = n.getPos()
 while run:
     clock.tick(60)
     for event in pygame.event.get():

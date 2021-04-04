@@ -2,7 +2,7 @@ import socket
 from _thread import *
 import sys
 
-SERVER = "192.168.1.5"
+SERVER = "192.168.1.68"
 PORT = 5555
 # SERVER = "192.168.1.68"
 # SERVER = socket.gethostbyname(socket.gethostname())
